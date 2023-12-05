@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <!-- Include Tailwind CSS (you may need to adjust the path to your CSS file) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="h-screen ">
+    <header >
+        <div class="relative h-screen  ">
+            <img src="hero.jpg" alt="Background Image" class="absolute inset-0 w-full h-full object-cover " />
+            <div class="absolute inset-0 flex items-center justify-center bg-opacity-50 visible  ">
+                <div class="text-center text-black bg-white  px-24 py-16 xs:py-2 xs:px-2 ">
+                    <h1 class="text-6xl text-bold ">Modal Project</h1>
+                    <button id="" class=" modal_btn mt-4 px-8 py-1 rounded-xl bg-blue-300 text-white hover:bg-white hover:text-blue-300 border border-3 border-blue-300">OPEN MODAL</button>
+                </div>
+            </div>
+            <div id="" class=" modal_div fixed inset-0 flex items-center justify-center bg-opacity-50 invisible  ">
+                <div id="" class="text-center text-black bg-white  bottom-32 ">
+                    <button id="" class=" close_btn relative buttom-32 text-red-900 top-0  right-2 left-32  w-12 h-12  ">
+                         <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button> 
+                    <h1 class="text-6xl text-bold  ">Modal Project</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+   <script src="app.js"></script>
+</body>
+</html>

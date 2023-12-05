@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body >
+    <div class=" flex h-screen  justify-center items-center ">
+    <div class=" w-96 h-96 grid  justify-center rounded-xl items-center bg-gradient-to-br from-green-300  to-pink-400">
+        <div class="flex gap-6">
+            <input class=" bg-white px-2 rounded-lg focus:outline-none" type="text" placeholder="input country">
+            <button class=" bg-white rounded-full  " onclick="fetchWeather()">
+                <svg class="h-4 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                  </svg>
+                  
+            </button>
+        </div>
+        <div class="grid text-center justify-center items-center">
+           <h1>22</h1> 
+           <p class=" "> Rwanda</p>
+        </div>
+    </div>
+    
+</div>
+<script src="scrpt.js"></script>
+</body>
+</html>

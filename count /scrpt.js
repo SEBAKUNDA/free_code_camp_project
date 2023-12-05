@@ -13,6 +13,14 @@ let counter =0;
         }else{
           counter=0;
         } 
+        if(counter >0){
+          values.style.color='green';
+        }
+        else if( counter < 0){
+          values.style.color='red';
+        }else{
+          values.style.color="black";
+        }
         values.textContent=counter;
      })
    });
